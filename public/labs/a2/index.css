@@ -260,3 +260,21 @@ p#id-selector-2 {
     font-weight: bolder;
 
 }
+
+#qwe {
+    background-color: blue
+}
+
+#wer {
+    background-color: green
+}
+
+.qwe {
+    background-color: blue;
+    color: white
+}
+
+wer {
+    background-color: green;
+    color: white
+}

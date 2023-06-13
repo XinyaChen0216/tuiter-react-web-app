@@ -41,8 +41,8 @@ function ProfileScreen() {
             </div></div>
         )}
         <button
-            onClick={() => {
-                dispatch(logoutThunk());
+            onClick={async () => {
+                await dispatch(logoutThunk());
                 navigate("/tuiter/login");
             }}>                   Logout</button>
         <button onClick={save}>Save  </button>

@@ -5,7 +5,6 @@ import { deleteTuitThunk } from "../services/tuits-thunks";
 import { RxCross1 } from "react-icons/rx"
 import { BsPatchCheckFill } from "react-icons/bs"
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 const TuitsItem = ({ tuit }) => {

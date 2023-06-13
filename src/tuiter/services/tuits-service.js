@@ -2,7 +2,9 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import * as authService from "./auth-service";
 
 import axios from 'axios';
-const TUITS_API = 'http://localhost:4000/api/tuits';
+
+const API_BASE = process.env.REACT_APP_API_BASE;
+const TUITS_API = `${API_BASE}/tuits`;
 
 
 export const createTuit = async (tuit) => {

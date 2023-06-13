@@ -1,7 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
-// import { faImage, faUser, faSignal, faFaceSmile, faLocationDot } from "@fortawesome/free-solid-svg-icons";
-import { createTuit } from "./reducers/tuits-reducer";
+// import { createTuit } from "./reducers/tuits-reducer";
+import { createTuitThunk } from "./services/tuits-thunks";
 import { useDispatch } from "react-redux";
 
 import { AiOutlinePicture } from "react-icons/ai"
@@ -19,7 +18,7 @@ const WhatsHappening = () => {
         const newTuit = {
             tuit: whatsHappening
         }
-        dispatch(createTuit(newTuit));
+        dispatch(createTuitThunk(newTuit));
         setWhatsHappening("");
     }
     return (
@@ -38,11 +37,6 @@ const WhatsHappening = () => {
                         Tuit
                     </button>
                     <div className="text-primary fs-2">
-                        {/* <FontAwesomeIcon className="me-3" icon={faImage} />
-                        <FontAwesomeIcon className="me-3" icon={faUser} />
-                        <FontAwesomeIcon className="me-3" icon={faSignal} />
-                        <FontAwesomeIcon className="me-3" icon={faFaceSmile} />
-                        <FontAwesomeIcon className="me-3" icon={faLocationDot} /> */}
                         <AiOutlinePicture className="me-3" />
                         <HiOutlineGif className="me-3" />
                         <MdFormatListBulleted className="me-3" />

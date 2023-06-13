@@ -18,7 +18,7 @@ function ProfileScreen() {
     return (<div>
         <h1>Profile Screen</h1>
         {profile && (<div>
-            <div>
+            <div className="mb-2">
                 <label>First Name</label>
                 <input type="text" value={profile.firstName}
                     onChange={(event) => {
@@ -28,7 +28,7 @@ function ProfileScreen() {
                         setProfile(newProfile);
                     }} />
             </div>
-            <div>
+            <div className="mb-2">
                 <label>Last Name</label>
                 <input type="text" value={profile.lastName}
                     onChange={(event) => {

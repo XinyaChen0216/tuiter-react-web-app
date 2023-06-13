@@ -22,7 +22,6 @@ const authSlice = createSlice({
         [registerThunk.fulfilled]: (state, { payload }) => {
             state.currentUser = payload;
         },
-
     },
 });
 export default authSlice.reducer;

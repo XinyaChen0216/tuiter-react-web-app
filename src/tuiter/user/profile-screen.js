@@ -39,12 +39,14 @@ function ProfileScreen() {
                     }} />
             </div></div>
         )}
-        <button
-            onClick={async () => {
-                await dispatch(logoutThunk());
-                navigate("/tuiter/login");
-            }}>                   Logout</button>
-        <button onClick={save}>Save  </button>
+        <div>
+            <button className="btn btn-primary me-2"
+                onClick={async () => {
+                    await dispatch(logoutThunk());
+                    navigate("/tuiter/login");
+                }}>                   Logout</button>
+            <button className="btn btn-primary" onClick={save}>Save  </button>
+        </div>
     </div>
     ); // see below
 }

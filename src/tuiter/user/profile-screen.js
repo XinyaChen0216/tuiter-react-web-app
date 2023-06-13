@@ -5,7 +5,6 @@ import { profileThunk, logoutThunk, updateUserThunk }
     from "../services/auth-thunks";
 function ProfileScreen() {
     const { currentUser } = useSelector((state) => state.user);
-    console.log(JSON.stringify(currentUser));
     const [profile, setProfile] = useState(currentUser);
     const dispatch = useDispatch();
     const navigate = useNavigate();

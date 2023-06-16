@@ -23,7 +23,6 @@ export const updateUser = async (user) => {
 };
 export const register = async ({ username, password }) => {
     const response = await api.post(`${USERS_URL}/register`, {
-        _id: (new Date()).getTime().toString(),
         username: username,
         password: password
     })
